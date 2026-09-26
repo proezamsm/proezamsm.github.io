@@ -55,43 +55,51 @@ document.getElementById("page-content").innerHTML = `
 
       <div class="testimonies-grid">
         <!-- Vídeo 1 -->
-        <div class="testimony-card">
+        <div class="card-testemunho">
           <video controls preload="metadata" class="testimony-video">
             <source src="videos/video1.mp4" type="video/mp4">
             O seu navegador não suporta o elemento de vídeo.
           </video>
-          <h3>Testemunho 1</h3>
-          <p>Partilha de experiências e vivências da primeira mobilidade.</p>
+          <div>
+            <h3>Testemunho 1</h3>
+            <p>Partilha de experiências e vivências.</p>
+          </div>
         </div>
 
         <!-- Vídeo 2 -->
-        <div class="testimony-card">
+        <div class="card-testemunho">
           <video controls preload="metadata" class="testimony-video">
             <source src="videos/video2.mp4" type="video/mp4">
             O seu navegador não suporta o elemento de vídeo.
           </video>
-          <h3>Testemunho 2</h3>
-          <p>Impacto das atividades de aprendizagem e cooperação.</p>
+          <div>
+            <h3>Testemunho 2</h3>
+            <p>Impacto das atividades de aprendizagem.</p>
+          </div>
         </div>
 
         <!-- Vídeo 3 -->
-        <div class="testimony-card">
+        <div class="card-testemunho">
           <video controls preload="metadata" class="testimony-video">
             <source src="videos/video3.mp4" type="video/mp4">
             O seu navegador não suporta o elemento de vídeo.
           </video>
-          <h3>Testemunho 3</h3>
-          <p>Aprendizagens culturais e desenvolvimento pessoal.</p>
+          <div>
+            <h3>Testemunho 3</h3>
+            <p>Aprendizagens culturais e desenvolvimento.</p>
+          </div>
         </div>
 
         <!-- Vídeo 4 -->
-        <div class="testimony-card">
+        <div class="card-testemunho">
           <video controls preload="metadata" class="testimony-video">
             <source src="videos/video4.mp4" type="video/mp4">
             O seu navegador não suporta o elemento de vídeo.
           </video>
-          <h3>Testemunho 4</h3>
-          <p>Conclusões e perspetivas futuras do projeto.</p>
+          <div>
+            <h3>Testemunho 4</h3>
+            <p>Conclusões e perspetivas futuras.</p>
+          </div>
         </div>
       </div>
     </div>
