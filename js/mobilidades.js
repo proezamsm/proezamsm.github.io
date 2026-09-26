@@ -1,104 +1,36 @@
-const d = PAGE_DATA;
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("page-content");
+  if (!container || !window.PAGE_DATA) return;
 
-document.getElementById("page-content").innerHTML = `
-  <section class="page-intro">
-    <div class="container">
-      <p class="eyebrow">${d.eyebrow}</p>
-      <h1>${d.heading}</h1>
-      <p>${d.intro}</p>
-    </div>
-  </section>
+  const data = window.PAGE_DATA;
 
-  <section class="section">
-    <div class="container">
-      <div class="mobility-list">
-        ${d.mobilities.map((mobility, mobilityIndex) => `
-          <article class="mobility-block">
-            <div class="mobility-header">
-              <p class="eyebrow">MOBILIDADE ${String(mobilityIndex + 1).padStart(2, "0")}</p>
-              <h2>${mobility.title}</h2>
-              <p class="mobility-location">${mobility.location}</p>
-              <p>${mobility.description}</p>
-            </div>
+  let html = `
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">${data.eyebrow}</span>
+        <h1 class="heading-main">${data.heading}</h1>
+        <p class="intro-text">${data.intro}</p>
 
-            <div class="gallery-grid">
-              ${mobility.images.map((image, imageIndex) => `
-                <figure class="gallery-item">
-                  <img
-                    src="${image}"
-                    alt="${mobility.title} - fotografia ${imageIndex + 1}"
-                    loading="lazy"
-                    onclick="openGallery(${mobilityIndex}, ${imageIndex})"
-                  >
-                </figure>
-              `).join("")}
-            </div>
-          </article>
-        `).join("")}
+        <div class="cards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+  `;
+
+  data.mobilities.forEach((mob) => {
+    html += `
+      <article class="card" style="border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; background: #fff;">
+        <h3 style="margin-bottom: 0.5rem;">${mob.title}</h3>
+        <p style="color: #64748b; font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>📍 ${mob.location}</strong></p>
+        ${mob.dates ? `<p style="color: #0d9488; font-size: 0.85rem; margin-bottom: 1rem;">🗓️ ${mob.dates}</p>` : ''}
+        <p style="margin-bottom: 1.5rem;">${mob.description}</p>
+        <a href="${mob.link}" class="btn btn-primary" style="display: inline-block; padding: 0.5rem 1rem; background: #1e3a8a; color: #fff; text-decoration: none; border-radius: 4px;">Ver detalhes &rarr;</a>
+      </article>
+    `;
+  });
+
+  html += `
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  `;
 
-  <div id="gallery-lightbox" class="gallery-lightbox" aria-hidden="true">
-    <button class="gallery-close" onclick="closeGallery()" aria-label="Fechar">×</button>
-    <button class="gallery-prev" onclick="previousImage()" aria-label="Fotografia anterior">‹</button>
-    <img id="gallery-large-image" src="" alt="">
-    <button class="gallery-next" onclick="nextImage()" aria-label="Fotografia seguinte">›</button>
-  </div>
-`;
-
-let currentMobility = 0;
-let currentImage = 0;
-
-function openGallery(mobilityIndex, imageIndex) {
-  currentMobility = mobilityIndex;
-  currentImage = imageIndex;
-  updateGallery();
-
-  const lightbox = document.getElementById("gallery-lightbox");
-  lightbox.classList.add("active");
-  lightbox.setAttribute("aria-hidden", "false");
-}
-
-function closeGallery() {
-  const lightbox = document.getElementById("gallery-lightbox");
-  lightbox.classList.remove("active");
-  lightbox.setAttribute("aria-hidden", "true");
-}
-
-function updateGallery() {
-  const image = d.mobilities[currentMobility].images[currentImage];
-  const largeImage = document.getElementById("gallery-large-image");
-
-  largeImage.src = image;
-  largeImage.alt =
-    d.mobilities[currentMobility].title +
-    " - fotografia " +
-    (currentImage + 1);
-}
-
-function nextImage() {
-  const images = d.mobilities[currentMobility].images;
-  currentImage = (currentImage + 1) % images.length;
-  updateGallery();
-}
-
-function previousImage() {
-  const images = d.mobilities[currentMobility].images;
-  currentImage = (currentImage - 1 + images.length) % images.length;
-  updateGallery();
-}
-
-document.addEventListener("keydown", function(event) {
-  const lightbox = document.getElementById("gallery-lightbox");
-
-  if (!lightbox || !lightbox.classList.contains("active")) return;
-
-  if (event.key === "Escape") closeGallery();
-  if (event.key === "ArrowRight") nextImage();
-  if (event.key === "ArrowLeft") previousImage();
-});
-
-document.getElementById("gallery-lightbox").addEventListener("click", function(event) {
-  if (event.target === this) closeGallery();
+  container.innerHTML = html;
 });
