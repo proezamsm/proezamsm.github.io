@@ -433,7 +433,7 @@ body[data-page="disseminacao"] .dissemination-btn{
 
 
 /* =========================================================
-   CARTÕES DE MOBILIDADES — DESIGN CORRIGIDO E TAMANHO AJUSTADO
+   CARTÕES DE MOBILIDADES — AJUSTE ESPECÍFICO DE TAMANHOS
    ========================================================= */
 
 .card-mobility {
@@ -455,7 +455,7 @@ body[data-page="disseminacao"] .dissemination-btn{
 }
 
 .mobility-title {
-  font-size: 1.25rem !important;
+  font-size: 1.2rem !important;
   font-weight: 800 !important;
   color: var(--blue) !important;
   margin-bottom: 12px !important;
@@ -465,48 +465,57 @@ body[data-page="disseminacao"] .dissemination-btn{
 .mobility-info {
   display: flex;
   flex-direction: column;
-  gap: 6px !important;
-  margin-bottom: 16px !important;
+  gap: 4px !important;
+  margin-bottom: 14px !important;
 }
 
-/* Tamanhos de texto corrigidos para País e Data */
+/* REDUÇÃO ESPECÍFICA DO TAMANHO DA LETRA PARA PAÍS E DATA */
+.card-mobility p,
 .card-mobility .info-item,
 .card-mobility .meta-item,
 .card-mobility p.location,
-.card-mobility p.date {
-  display: flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  font-size: 0.88rem !important; /* Tamanho proporcional */
-  line-height: 1.3 !important;
-  margin-bottom: 4px !important;
+.card-mobility p.date,
+.card-mobility .mobility-info p,
+.card-mobility .mobility-info span {
+  font-size: 0.82rem !important; /* Tamanho visivelmente reduzido */
+  line-height: 1.25 !important;
+  margin: 0 0 3px 0 !important;
+  font-weight: 600 !important;
 }
 
+/* Estilo do Local/País */
+.card-mobility p.location,
 .card-mobility .info-item.location,
-.card-mobility p.location {
+.card-mobility .meta-item.location {
   color: #1696d2 !important;
   font-weight: 700 !important;
 }
 
+/* Estilo da Data */
+.card-mobility p.date,
 .card-mobility .info-item.date,
-.card-mobility p.date {
+.card-mobility .meta-item.date {
   color: var(--muted) !important;
   font-weight: 600 !important;
-  margin-bottom: 14px !important;
+  margin-bottom: 12px !important;
 }
 
+/* Ícones de Pin e Calendário */
 .card-mobility .info-icon,
 .card-mobility .meta-icon {
-  font-size: 0.95rem !important;
+  font-size: 0.85rem !important;
+  display: inline-block !important;
+  margin-right: 4px !important;
   flex-shrink: 0 !important;
 }
 
+/* Texto de Resumo */
 .mobility-text,
 .card-mobility-text {
-  font-size: 0.88rem !important;
-  line-height: 1.5 !important;
+  font-size: 0.85rem !important;
+  line-height: 1.45 !important;
   color: var(--text) !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 18px !important;
   flex-grow: 1;
 }
 
@@ -515,19 +524,19 @@ body[data-page="disseminacao"] .dissemination-btn{
   margin-top: auto;
 }
 
-/* Botão ajustado */
+/* Botão "Ver detalhes" */
 .btn-mob-link,
 .card-mobility .btn-mobility-action,
 .card-mobility .btn-primary {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 8px !important;
+  gap: 6px !important;
   background-color: var(--blue) !important;
   color: #ffffff !important;
-  padding: 10px 18px !important;
+  padding: 8px 16px !important;
   border-radius: 8px !important;
-  font-size: 0.88rem !important;
+  font-size: 0.82rem !important;
   font-weight: 700 !important;
   text-decoration: none !important;
   white-space: nowrap !important;
