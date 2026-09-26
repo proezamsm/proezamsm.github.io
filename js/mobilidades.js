@@ -44,7 +44,7 @@ document.getElementById("page-content").innerHTML = `
     </div>
   </section>
 
-  <!-- SECÇÃO DE TESTEMUNHOS EM VÍDEO (.mp4) -->
+  <!-- SECÇÃO DE TESTEMUNHOS EM VÍDEO -->
   <section class="section section-soft testimonies-section">
     <div class="container">
       <div class="section-heading centered">
@@ -54,7 +54,6 @@ document.getElementById("page-content").innerHTML = `
       </div>
 
       <div class="testimonies-grid">
-        <!-- Vídeo 1 -->
         <div class="card-testemunho">
           <video controls preload="metadata" class="testimony-video">
             <source src="videos/video1.mp4" type="video/mp4">
@@ -66,7 +65,6 @@ document.getElementById("page-content").innerHTML = `
           </div>
         </div>
 
-        <!-- Vídeo 2 -->
         <div class="card-testemunho">
           <video controls preload="metadata" class="testimony-video">
             <source src="videos/video2.mp4" type="video/mp4">
@@ -78,7 +76,6 @@ document.getElementById("page-content").innerHTML = `
           </div>
         </div>
 
-        <!-- Vídeo 3 -->
         <div class="card-testemunho">
           <video controls preload="metadata" class="testimony-video">
             <source src="videos/video3.mp4" type="video/mp4">
@@ -90,7 +87,6 @@ document.getElementById("page-content").innerHTML = `
           </div>
         </div>
 
-        <!-- Vídeo 4 -->
         <div class="card-testemunho">
           <video controls preload="metadata" class="testimony-video">
             <source src="videos/video4.mp4" type="video/mp4">
