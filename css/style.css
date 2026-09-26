@@ -292,3 +292,81 @@ body.page-leave{opacity:0;transform:translateY(8px)}
 .partners-invisible-table tr:last-child {
   border-bottom: none !important;
 }
+
+/* =========================================================
+   GRELHA DE FOTOGRAFIAS DE DISSEMINAÇÃO (4 POR LINHA)
+   ========================================================= */
+.dissemination-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dissemination-photo-card {
+  background: #ffffff;
+  border: 1px solid #e0edf2;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 60, 100, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dissemination-photo-card:hover {
+  transform: translateY(-4px);
+  border-color: #9fd4e8;
+  box-shadow: 0 12px 28px rgba(0, 60, 100, 0.1);
+}
+
+.dissemination-photo {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  display: block;
+}
+
+.dissemination-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dissemination-photo:hover img {
+  transform: scale(1.03);
+}
+
+.dissemination-photo-caption {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.dissemination-photo-caption h3 {
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  color: var(--blue) !important;
+  margin: 0 !important;
+}
+
+.dissemination-photo-caption p {
+  font-size: 0.8rem !important;
+  color: var(--muted) !important;
+  margin: 0 !important;
+  line-height: 1.35 !important;
+}
+
+@media(max-width: 1024px) {
+  .dissemination-photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  .dissemination-photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
