@@ -5,9 +5,12 @@ window.PAGE_DATA = {
     "Conheça as experiências de aprendizagem, formação e partilha realizadas no âmbito do projeto Erasmus+.",
   items: [
     {
-      icon: "🧘",
-      title: "Mindfulness",
-      text: "Mindfulness e meditação."
+      nome: "1.ª Mobilidade",
+      localizacao: "📍 Dalaman, Turquia",
+      data: "📅 16 a 20 de janeiro de 2026",
+      resumo:
+        "Este projeto visa a capacitação e partilha de boas práticas na área do bem-estar e saúde mental.",
+      link: "https://example.com"
     },
     {
       icon: "💚",
