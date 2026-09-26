@@ -43,4 +43,57 @@ document.getElementById("page-content").innerHTML = `
       </div>
     </div>
   </section>
+
+  <!-- SECÇÃO DE TESTEMUNHOS EM VÍDEO (.mp4) -->
+  <section class="section section-soft testimonies-section">
+    <div class="container">
+      <div class="section-heading centered">
+        <span class="eyebrow">TESTEMUNHOS</span>
+        <h2>O que dizem os participantes</h2>
+        <p>Assista aos testemunhos em vídeo sobre as experiências vividas nas nossas mobilidades Erasmus+.</p>
+      </div>
+
+      <div class="testimonies-grid">
+        <!-- Vídeo 1 -->
+        <div class="testimony-card">
+          <video controls preload="metadata" class="testimony-video">
+            <source src="videos/video1.mp4" type="video/mp4">
+            O seu navegador não suporta o elemento de vídeo.
+          </video>
+          <h3>Testemunho 1</h3>
+          <p>Partilha de experiências e vivências da primeira mobilidade.</p>
+        </div>
+
+        <!-- Vídeo 2 -->
+        <div class="testimony-card">
+          <video controls preload="metadata" class="testimony-video">
+            <source src="videos/video2.mp4" type="video/mp4">
+            O seu navegador não suporta o elemento de vídeo.
+          </video>
+          <h3>Testemunho 2</h3>
+          <p>Impacto das atividades de aprendizagem e cooperação.</p>
+        </div>
+
+        <!-- Vídeo 3 -->
+        <div class="testimony-card">
+          <video controls preload="metadata" class="testimony-video">
+            <source src="videos/video3.mp4" type="video/mp4">
+            O seu navegador não suporta o elemento de vídeo.
+          </video>
+          <h3>Testemunho 3</h3>
+          <p>Aprendizagens culturais e desenvolvimento pessoal.</p>
+        </div>
+
+        <!-- Vídeo 4 -->
+        <div class="testimony-card">
+          <video controls preload="metadata" class="testimony-video">
+            <source src="videos/video4.mp4" type="video/mp4">
+            O seu navegador não suporta o elemento de vídeo.
+          </video>
+          <h3>Testemunho 4</h3>
+          <p>Conclusões e perspetivas futuras do projeto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 `;
