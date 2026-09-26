@@ -31,12 +31,10 @@ window.PAGE_DATA = {
     {
       title: "Atividades do projeto",
       image: "css/imagens/img1.jpeg"
-      
     },
     {
       title: "Momentos de partilha",
       image: "css/imagens/img2.jpeg"
-      
     },
     {
       title: "Eventos e encontros",
@@ -47,28 +45,28 @@ window.PAGE_DATA = {
       title: "Resultados em ação",
       image: "css/imagens/img4.jpeg",
       description: "Espaço reservado para fotografias relacionadas com os resultados."
-    }
+    },
     {
       title: "Resultados em ação",
       image: "css/imagens/img5.jpeg",
       description: "Espaço reservado para fotografias relacionadas com os resultados."
-    }
-{
+    },
+    {
       title: "Resultados em ação",
       image: "css/imagens/img6.jpeg",
       description: "Espaço reservado para fotografias relacionadas com os resultados."
-    }
-{
+    },
+    {
       title: "Resultados em ação",
       image: "css/imagens/img7.jpeg",
       description: "Espaço reservado para fotografias relacionadas com os resultados."
-    }
-{
+    },
+    {
       title: "Resultados em ação",
       image: "css/imagens/img8.jpeg",
       description: "Espaço reservado para fotografias relacionadas com os resultados."
-    }
-{
+    },
+    {
       title: "Resultados em ação",
       image: "css/imagens/img9.jpeg",
       description: "Espaço reservado para fotografias relacionadas com os resultados."
