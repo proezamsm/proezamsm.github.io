@@ -282,6 +282,8 @@ body.page-leave{opacity:0;transform:translateY(8px)}
   height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,60,100,0.12);
+  object-fit: contain !important;
+  background-color: #f8fcff;
   transition: transform 0.25s ease;
 }
 
