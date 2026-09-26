@@ -49,7 +49,6 @@ a{text-decoration:none;color:inherit}
 @media(max-width:760px){.nav-wrap{min-height:74px}.menu-toggle{display:block}.main-nav{position:absolute;top:74px;left:0;right:0;background:#fff;display:none;flex-direction:column;align-items:stretch;padding:10px 6%;box-shadow:0 12px 20px rgba(0,50,80,.1)}.main-nav.open{display:flex}.main-nav a{padding:12px 0;border-bottom:1px solid #eaf1f5}.brand-text strong{font-size:18px}.brand-text small{font-size:9px}.brand-logo{width:52px;height:52px}.brand-mark{width:44px;height:44px;transform:scale(.8);transform-origin:left center}.hero{min-height:520px}.hero-content{min-height:520px}.hero h1{font-size:42px}.hero-subtitle{font-size:17px}.about-grid,.results-grid,.contact-grid{grid-template-columns:1fr;gap:35px}.stats-grid{grid-template-columns:1fr;gap:22px}.quick-grid{grid-template-columns:1fr 1fr}.footer-wrap{flex-direction:column}.section{padding:60px 0}}
 @media(max-width:480px){.topic-grid,.quick-grid{grid-template-columns:1fr}.objective-card{grid-template-columns:65px 1fr;padding:20px}.icon-circle{width:60px;height:60px;font-size:25px}.hero h1{font-size:35px}.project-info{padding:20px}.section-heading{margin-bottom:30px}}
 
-/* Navegação multipágina com transição suave */
 body{opacity:1;transition:opacity .32s ease,transform .32s ease}
 body.page-leave{opacity:0;transform:translateY(8px)}
 .page-intro{padding:76px 0 28px}
@@ -57,10 +56,6 @@ body.page-leave{opacity:0;transform:translateY(8px)}
 .page-intro p{max-width:760px;color:var(--muted);margin-top:15px}
 @media(prefers-reduced-motion:reduce){body{transition:none}}
 
-
-/* =========================================================
-   SUBMENU "MAIS"
-   ========================================================= */
 .main-nav .has-submenu{position:relative}
 .main-nav .submenu-main{display:flex;align-items:center}
 .main-nav .submenu-label{padding:31px 0 27px;border-bottom:3px solid transparent;color:#254e70;font-size:15px;font-weight:700;white-space:nowrap}
@@ -74,9 +69,6 @@ body.page-leave{opacity:0;transform:translateY(8px)}
 .main-nav .submenu a{display:block;padding:11px 18px;border:0;color:#254e70;font-size:14px;font-weight:700;white-space:nowrap}
 .main-nav .submenu a:hover,.main-nav .submenu a.active{background:#eef9fc;color:#0876bd;border:0}
 
-/* =========================================================
-   RODAPÉ — UNIÃO EUROPEIA
-   ========================================================= */
 .site-footer{background:#042d4e;color:#c7dbe8;padding:24px 0;font-size:12px}
 .footer-eu{display:flex;align-items:center;justify-content:center;gap:22px}
 .footer-eu img{width:145px;height:auto;object-fit:contain;flex:0 0 auto}
@@ -84,9 +76,6 @@ body.page-leave{opacity:0;transform:translateY(8px)}
 .footer-eu-text strong{display:block;margin-bottom:6px;color:#fff;font-size:14px}
 .footer-eu-text p{max-width:930px;line-height:1.55;text-align:left}
 
-/* =========================================================
-   TRANSIÇÃO DO CONTEÚDO — HEADER E RODAPÉ PERMANECEM
-   ========================================================= */
 #page-content{min-height:300px}
 .page-content-leave{opacity:0;transform:translateY(18px);transition:opacity .22s ease,transform .22s ease}
 .page-content-enter{opacity:0;transform:translateY(35px)}
@@ -107,334 +96,6 @@ body.page-leave{opacity:0;transform:translateY(8px)}
   .footer-eu img{width:105px}
   .footer-eu-text p{text-align:left}
 }
-
-
-/* =========================================================
-   MOBILIDADES — GALERIA
-   ========================================================= */
-
-body[data-page="mobilidades"] .mobility-list{
-  display:grid;
-  gap:55px;
-}
-
-body[data-page="mobilidades"] .mobility-block{
-  display:block;
-}
-
-body[data-page="mobilidades"] .mobility-header{
-  margin-bottom:25px;
-}
-
-body[data-page="mobilidades"] .mobility-header h2{
-  font-size:clamp(27px,3vw,36px);
-  line-height:1.15;
-  color:var(--blue);
-  margin:4px 0 8px;
-}
-
-body[data-page="mobilidades"] .mobility-header p{
-  color:var(--muted);
-  max-width:800px;
-}
-
-body[data-page="mobilidades"] .mobility-header .mobility-location{
-  color:#1588c9;
-  font-weight:800;
-  margin-bottom:7px;
-}
-
-body[data-page="mobilidades"] .gallery-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  width:100%;
-}
-
-body[data-page="mobilidades"] .gallery-item{
-  margin:0;
-  overflow:hidden;
-  border-radius:16px;
-  background:#eef4f7;
-  box-shadow:0 8px 22px rgba(0,50,80,.08);
-  aspect-ratio:4/3;
-}
-
-body[data-page="mobilidades"] .gallery-item img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  cursor:pointer;
-  transition:transform .3s ease;
-}
-
-body[data-page="mobilidades"] .gallery-item:hover img{
-  transform:scale(1.05);
-}
-
-
-/* =========================================================
-   MOBILIDADES — LIGHTBOX
-   ========================================================= */
-
-.gallery-lightbox{
-  position:fixed;
-  inset:0;
-  z-index:3000;
-  display:none;
-  align-items:center;
-  justify-content:center;
-  padding:40px;
-  background:rgba(3,25,45,.92);
-}
-
-.gallery-lightbox.active{
-  display:flex;
-}
-
-.gallery-lightbox > img{
-  max-width:min(1000px,90vw);
-  max-height:85vh;
-  width:auto;
-  height:auto;
-  object-fit:contain;
-  border-radius:12px;
-  box-shadow:0 20px 60px rgba(0,0,0,.35);
-  background:#fff;
-}
-
-.gallery-close,
-.gallery-prev,
-.gallery-next{
-  position:absolute;
-  border:0;
-  background:rgba(255,255,255,.12);
-  color:#fff;
-  cursor:pointer;
-  transition:background .2s ease;
-}
-
-.gallery-close:hover,
-.gallery-prev:hover,
-.gallery-next:hover{
-  background:rgba(255,255,255,.25);
-}
-
-.gallery-close{
-  top:20px;
-  right:25px;
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  font-size:32px;
-  line-height:1;
-}
-
-.gallery-prev,
-.gallery-next{
-  top:50%;
-  width:52px;
-  height:70px;
-  margin-top:-35px;
-  border-radius:12px;
-  font-size:42px;
-  line-height:1;
-}
-
-.gallery-prev{left:25px}
-.gallery-next{right:25px}
-
-@media(max-width:1000px){
-  body[data-page="mobilidades"] .gallery-grid{
-    grid-template-columns:repeat(3,1fr);
-  }
-}
-
-@media(max-width:760px){
-  body[data-page="mobilidades"] .gallery-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:12px;
-  }
-
-  .gallery-lightbox{padding:20px}
-
-  .gallery-lightbox > img{
-    max-width:92vw;
-    max-height:78vh;
-  }
-
-  .gallery-prev,
-  .gallery-next{
-    width:42px;
-    height:55px;
-    margin-top:-27px;
-    font-size:32px;
-  }
-
-  .gallery-prev{left:10px}
-  .gallery-next{right:10px}
-}
-
-@media(max-width:480px){
-  body[data-page="mobilidades"] .gallery-grid{
-    grid-template-columns:1fr;
-  }
-}
-
-
-/* =========================================================
-   DISSEMINAÇÃO — FOTOGRAFIAS, LINKS E DOCUMENTOS
-   ========================================================= */
-
-body[data-page="disseminacao"] .dissemination-photo-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-}
-
-body[data-page="disseminacao"] .dissemination-photo-card{
-  overflow:hidden;
-  border-radius:16px;
-  background:#fff;
-  box-shadow:0 8px 22px rgba(0,50,80,.08);
-  border:1px solid #e0edf2;
-}
-
-body[data-page="disseminacao"] .dissemination-photo{
-  display:block;
-  width:100%;
-  padding:0;
-  border:0;
-  background:#eef4f7;
-  cursor:pointer;
-  aspect-ratio:4/3;
-  overflow:hidden;
-}
-
-body[data-page="disseminacao"] .dissemination-photo img{
-  display:block;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:transform .3s ease;
-}
-
-body[data-page="disseminacao"] .dissemination-photo:hover img{
-  transform:scale(1.05);
-}
-
-body[data-page="disseminacao"] .dissemination-photo-caption{
-  padding:18px;
-}
-
-body[data-page="disseminacao"] .dissemination-photo-caption h3{
-  color:var(--blue);
-  margin-bottom:5px;
-  font-size:18px;
-}
-
-body[data-page="disseminacao"] .dissemination-photo-caption p{
-  color:var(--muted);
-  font-size:13px;
-}
-
-body[data-page="disseminacao"] .dissemination-resource-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:20px;
-}
-
-body[data-page="disseminacao"] .dissemination-resource-card{
-  display:grid;
-  grid-template-columns:60px 1fr;
-  gap:18px;
-  align-items:start;
-  padding:25px;
-  background:#fff;
-  border:1px solid #d9edf5;
-  border-radius:18px;
-  box-shadow:0 5px 20px rgba(0,60,100,.05);
-}
-
-body[data-page="disseminacao"] .resource-icon{
-  width:55px;
-  height:55px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:#eef9fc;
-  font-size:27px;
-}
-
-body[data-page="disseminacao"] .dissemination-resource-card h3{
-  color:var(--blue);
-  font-size:19px;
-  margin-bottom:5px;
-}
-
-body[data-page="disseminacao"] .dissemination-resource-card p{
-  color:var(--muted);
-  font-size:14px;
-}
-
-body[data-page="disseminacao"] .dissemination-btn{
-  margin-top:12px;
-}
-
-@media(max-width:1000px){
-  body[data-page="disseminacao"] .dissemination-photo-grid{
-    grid-template-columns:repeat(3,1fr);
-  }
-}
-
-@media(max-width:760px){
-  body[data-page="disseminacao"] .dissemination-photo-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:12px;
-  }
-
-  body[data-page="disseminacao"] .dissemination-resource-grid{
-    grid-template-columns:1fr;
-  }
-}
-
-@media(max-width:480px){
-  body[data-page="disseminacao"] .dissemination-photo-grid{
-    grid-template-columns:1fr;
-  }
-
-  body[data-page="disseminacao"] .dissemination-resource-card{
-    grid-template-columns:1fr;
-  }
-}
-
-
-/* =========================================================
-   SETA DO SUBMENU — MAIS VISÍVEL
-   ========================================================= */
-
-.main-nav .submenu-toggle{
-  width:28px;
-  height:34px;
-  margin-left:3px;
-  font-size:16px;
-  font-weight:900;
-  color:#164b7e;
-}
-
-.main-nav .submenu-toggle:hover{
-  color:#0876bd;
-}
-
-.main-nav .submenu-arrow{
-  line-height:1;
-}
-
-
-/* =========================================================
-   CARTÕES DE MOBILIDADES — AJUSTE ESPECÍFICO DE TAMANHOS
-   ========================================================= */
 
 .card-mobility {
   background: #ffffff;
@@ -469,7 +130,6 @@ body[data-page="disseminacao"] .dissemination-btn{
   margin-bottom: 14px !important;
 }
 
-/* REDUÇÃO ESPECÍFICA DO TAMANHO DA LETRA PARA PAÍS E DATA */
 .card-mobility p,
 .card-mobility .info-item,
 .card-mobility .meta-item,
@@ -477,13 +137,12 @@ body[data-page="disseminacao"] .dissemination-btn{
 .card-mobility p.date,
 .card-mobility .mobility-info p,
 .card-mobility .mobility-info span {
-  font-size: 0.82rem !important; /* Tamanho visivelmente reduzido */
+  font-size: 0.82rem !important;
   line-height: 1.25 !important;
   margin: 0 0 3px 0 !important;
   font-weight: 600 !important;
 }
 
-/* Estilo do Local/País */
 .card-mobility p.location,
 .card-mobility .info-item.location,
 .card-mobility .meta-item.location {
@@ -491,7 +150,6 @@ body[data-page="disseminacao"] .dissemination-btn{
   font-weight: 700 !important;
 }
 
-/* Estilo da Data */
 .card-mobility p.date,
 .card-mobility .info-item.date,
 .card-mobility .meta-item.date {
@@ -500,7 +158,6 @@ body[data-page="disseminacao"] .dissemination-btn{
   margin-bottom: 12px !important;
 }
 
-/* Ícones de Pin e Calendário */
 .card-mobility .info-icon,
 .card-mobility .meta-icon {
   font-size: 0.85rem !important;
@@ -509,7 +166,6 @@ body[data-page="disseminacao"] .dissemination-btn{
   flex-shrink: 0 !important;
 }
 
-/* Texto de Resumo */
 .mobility-text,
 .card-mobility-text {
   font-size: 0.85rem !important;
@@ -524,7 +180,6 @@ body[data-page="disseminacao"] .dissemination-btn{
   margin-top: auto;
 }
 
-/* Botão "Ver detalhes" */
 .btn-mob-link,
 .card-mobility .btn-mobility-action,
 .card-mobility .btn-primary {
@@ -552,4 +207,67 @@ body[data-page="disseminacao"] .dissemination-btn{
 .card-mobility .btn-primary:hover {
   background-color: #1696d2 !important;
   transform: translateY(-1px) !important;
+}
+
+/* =========================================================
+   ESTILOS PARA OS 4 CARTÕES DE TESTEMUNHOS (VÍDEOS LADO A LADO)
+   ========================================================= */
+.testimonies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.card-testemunho {
+  background: #ffffff;
+  border: 1px solid #e0edf2;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 5px 20px rgba(0, 60, 100, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-testemunho:hover {
+  transform: translateY(-4px);
+  border-color: #9fd4e8;
+  box-shadow: 0 12px 28px rgba(0, 60, 100, 0.1);
+}
+
+.testimony-video {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #000;
+  margin-bottom: 12px;
+}
+
+.card-testemunho h3 {
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  color: var(--blue) !important;
+  margin-bottom: 6px !important;
+}
+
+.card-testemunho p {
+  font-size: 0.82rem !important;
+  color: var(--muted) !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+}
+
+@media(max-width: 1024px) {
+  .testimonies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  .testimonies-grid {
+    grid-template-columns: 1fr;
+  }
 }
