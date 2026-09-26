@@ -3,6 +3,30 @@ window.PAGE_DATA = {
   heading: "Disseminação",
   intro: "Partilhamos conhecimentos, experiências e resultados do projeto com a comunidade.",
 
+  // 1.º Bloco: Cartaz
+  cartaz: {
+    title: "Cartaz Saúde Mental",
+    image: "doc/Cartaz_Proeza_Saude_Mental_22jul.jpeg",
+    description: "Cartaz oficial de divulgação e sensibilização do projeto."
+  },
+
+  // 2.º Bloco: Parceiros (Tabela de 2 colunas)
+  partners: [
+    {
+      nome: "Nome do Parceiro 1",
+      url: "#"
+    },
+    {
+      nome: "Nome do Parceiro 2",
+      url: "#"
+    },
+    {
+      nome: "Nome do Parceiro 3",
+      url: "#"
+    }
+  ],
+
+  // 3.º Bloco: Fotografias
   photos: [
     {
       title: "Atividades do projeto",
@@ -26,19 +50,7 @@ window.PAGE_DATA = {
     }
   ],
 
-  links: [
-    {
-      title: "Site do projeto",
-      description: "Link para o recurso ou página online.",
-      url: "#"
-    },
-    {
-      title: "Recursos Erasmus+",
-      description: "Link para recursos e informação relacionados com o projeto.",
-      url: "#"
-    }
-  ],
-
+  // 4.º Bloco: Documentos PDF
   documents: [
     {
       title: "Documento do projeto",
