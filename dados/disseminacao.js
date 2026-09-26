@@ -6,7 +6,7 @@ window.PAGE_DATA = {
   // 1.º Bloco: Cartaz
   cartaz: {
     title: "Cartaz Saúde Mental",
-    image: "doc/Cartaz_Proeza_Saude_Mental_22jul.jpeg",
+    image: "docs/Cartaz_Proeza_Saude_Mental_22jul.jpeg",
     description: "Cartaz oficial de divulgação e sensibilização do projeto."
   },
 
@@ -30,22 +30,22 @@ window.PAGE_DATA = {
   photos: [
     {
       title: "Atividades do projeto",
-      image: "css/imagens/logo.png",
+      image: "css/imagens/img1.jpg",
       description: "Espaço reservado para fotografias das atividades de disseminação."
     },
     {
       title: "Momentos de partilha",
-      image: "css/imagens/logo.png",
+      image: "css/imagens/img2.jpg",
       description: "Espaço reservado para fotografias e momentos de partilha."
     },
     {
       title: "Eventos e encontros",
-      image: "css/imagens/logo.png",
+      image: "css/imagens/img3.jpg",
       description: "Espaço reservado para fotografias de eventos e encontros."
     },
     {
       title: "Resultados em ação",
-      image: "css/imagens/logo.png",
+      image: "css/imagens/img4.jpg",
       description: "Espaço reservado para fotografias relacionadas com os resultados."
     }
   ],
