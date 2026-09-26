@@ -1,20 +1,21 @@
-const mobilidades = [
+window.PAGE_DATA = {
+  eyebrow: "MOBILIDADES · ERASMUS+",
+  heading: "As nossas mobilidades",
+  intro: "Conheça as experiências de aprendizagem, formação e partilha realizadas no âmbito do projeto Erasmus+.",
+  items: [
     {
-        id: 1,
-        titulo: "Mobilidade a Itália",
-        imagem: "css/imagens/mobilidade1.jpg",
-        data: "10/05/2026 - 15/05/2026",
-        localizacao: "Roma, Itália",
-        participantes: "4 Professores / 6 Alunos",
-        descricao: "Descrição detalhada sobre os objetivos e atividades realizadas durante esta mobilidade."
+      title: "1.ª Mobilidade — Turquia",
+      location: "📍 Dalaman & Fethiye, Turquia",
+      date: "📅 16 a 22 de novembro de 2025",
+      text: "European Training Programme in Mental Health, Resilience, and Personal Development no Pixie Academy Training Center.",
+      link: "#"
     },
     {
-        id: 2,
-        titulo: "Mobilidade à Espanha",
-        imagem: "css/imagens/mobilidade2.jpg",
-        data: "20/10/2026 - 25/10/2026",
-        localizacao: "Madrid, Espanha",
-        participantes: "2 Professores / 4 Alunos",
-        descricao: "Partilha de boas práticas e aprendizagem colaborativa em contexto internacional."
+      title: "2.ª Mobilidade — Itália",
+      location: "📍 Roma, Itália",
+      date: "📅 10 a 16 de maio de 2026",
+      text: "Programa de formação e intercâmbio cultural focado no bem-estar comunitário e inclusão social.",
+      link: "#"
     }
-];
+  ]
+};
