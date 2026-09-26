@@ -1,27 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const container = document.getElementById("lista-mobilidades");
+const d = PAGE_DATA;
 
-    if (!container) return;
+document.getElementById("page-content").innerHTML = `
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">${d.eyebrow}</p>
+      <h1>${d.heading}</h1>
+      <p>${d.intro}</p>
+    </div>
+  </section>
 
-    container.innerHTML = ""; // Limpa qualquer conteúdo residual
-
-    mobilidades.forEach(item => {
-        const cartao = document.createElement("div");
-        cartao.className = "cartao";
-
-        cartao.innerHTML = `
-            <div class="cartao-imagem">
-                <img src="${item.imagem}" alt="${item.titulo}">
-            </div>
-            <div class="cartao-conteudo">
-                <h3>${item.titulo}</h3>
-                <p class="cartao-info"><strong>Data:</strong> ${item.data}</p>
-                <p class="cartao-info"><strong>Localização:</strong> ${item.localizacao}</p>
-                <p class="cartao-info"><strong>Participantes:</strong> ${item.participantes}</p>
-                <p class="cartao-descricao">${item.descricao}</p>
-            </div>
-        `;
-
-        container.appendChild(cartao);
-    });
-});
+  <section class="section">
+    <div class="container">
+      <div class="topic-grid">
+        ${d.items.map(x => `
+          <article>
+            <h3>${x.title}</h3>
+            <p class="location">${x.location}</p>
+            <p class="date">${x.date}</p>
+            <p>${x.text}</p>
+            <a href="${x.link}" class="btn-details">Ver detalhes &rarr;</a>
+          </article>
+        `).join("")}
+      </div>
+    </div>
+  </section>
+`;
