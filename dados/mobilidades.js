@@ -1,51 +1,20 @@
-window.PAGE_DATA = {
-  eyebrow: "MOBILIDADES · ERASMUS+",
-  heading: "As nossas mobilidades",
-  intro: "Conheça as experiências de aprendizagem, formação e partilha realizadas no âmbito do projeto Erasmus+.",
-  mobilities: [
+const mobilidades = [
     {
-      title: "Mobilidade 01",
-      location: "Local da mobilidade",
-      description: "Descrição da primeira mobilidade. Poderá substituir este texto mais tarde com a informação real.",
-      images: [
-        "css/imagens/logo.png",
-        "css/imagens/logo.png",
-        "css/imagens/logo.png",
-        "css/imagens/logo.png"
-      ]
+        id: 1,
+        titulo: "Mobilidade a Itália",
+        imagem: "css/imagens/mobilidade1.jpg",
+        data: "10/05/2026 - 15/05/2026",
+        localizacao: "Roma, Itália",
+        participantes: "4 Professores / 6 Alunos",
+        descricao: "Descrição detalhada sobre os objetivos e atividades realizadas durante esta mobilidade."
     },
     {
-      title: "Mobilidade 02",
-      location: "Local da mobilidade",
-      description: "Descrição da segunda mobilidade. Poderá substituir este texto mais tarde com a informação real.",
-      images: [
-        "css/imagens/logo.png",
-        "css/imagens/logo.png",
-        "css/imagens/logo.png",
-        "css/imagens/logo.png"
-      ]
-    },
-    {
-      title: "Mobilidade 03",
-      location: "Local da mobilidade",
-      description: "Descrição da terceira mobilidade. Poderá substituir este texto mais tarde com a informação real.",
-      images: [
-        "css/imagens/logo.png",
-        "css/imagens/logo.png",
-        "css/imagens/logo.png",
-        "css/imagens/logo.png"
-      ]
-    },
-    {
-      title: "Mobilidade 04",
-      location: "Local da mobilidade",
-      description: "Descrição da quarta mobilidade. Poderá substituir este texto mais tarde com a informação real.",
-      images: [
-        "css/imagens/logo.png",
-        "css/imagens/logo.png",
-        "css/imagens/logo.png",
-        "css/imagens/logo.png"
-      ]
+        id: 2,
+        titulo: "Mobilidade à Espanha",
+        imagem: "css/imagens/mobilidade2.jpg",
+        data: "20/10/2026 - 25/10/2026",
+        localizacao: "Madrid, Espanha",
+        participantes: "2 Professores / 4 Alunos",
+        descricao: "Partilha de boas práticas e aprendizagem colaborativa em contexto internacional."
     }
-  ]
-};
+];
