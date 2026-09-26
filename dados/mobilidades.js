@@ -6,10 +6,10 @@ window.PAGE_DATA = {
   items: [
     {
       nome: "1.ª Mobilidade",
-      localizacao: "Dalaman, Turquia",
-      data: "16 a 20 de janeiro de 2026",
+      localizacao: "Dalaman, Muğla Turquia ",
+      data: "16 – 22 de novembro de 2025 ",
       resumo:
-        "Este projeto visa a capacitação e partilha de boas práticas na área do bem-estar e saúde mental.",
+        "Este booklet documenta a mobilidade de formação realizada em Dalaman (Turquia), entre 16 e 22 de novembro de 2025, no âmbito do projeto Erasmus+ de Educação de Adultos da PROEZA Associação. Reúne o programa da formação, o registo fotográfico das atividades e a avaliação dos participantes, integrando o relatório final do projeto. ",
       link: "#"
     },
     {
