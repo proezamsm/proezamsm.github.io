@@ -13,39 +13,36 @@ window.PAGE_DATA = {
       link: "https://example.com"
     },
     {
-      icon: "💚",
-      title: "Bem-estar",
-      text: "Saúde mental e bem-estar psicológico."
+      nome: "2.ª Mobilidade",
+      localizacao: "📍 Roma, Itália",
+      data: "📅 10 a 15 de maio de 2026",
+      resumo:
+        "Programa focado no desenvolvimento de competências sociais, emocionais e de inclusão em grupos de adultos.",
+      link: "https://example.com"
     },
     {
-      icon: "🌱",
-      title: "Resiliência",
-      text: "Gestão do stress e desenvolvimento pessoal."
+      nome: "3.ª Mobilidade",
+      localizacao: "📍 Valência, Espanha",
+      data: "📅 12 a 17 de outubro de 2026",
+      resumo:
+        "Workshop prático focado em arte, expressão emocional e estratégias de promoção de saúde mental.",
+      link: "https://example.com"
     },
     {
-      icon: "🎨",
-      title: "Expressão",
-      text: "Arte e expressão emocional."
+      nome: "4.ª Mobilidade",
+      localizacao: "📍 Atenas, Grécia",
+      data: "📅 18 a 22 de janeiro de 2027",
+      resumo:
+        "Atividades pedagógicas focadas na gestão do tempo de ecrã e hábitos digitais saudáveis.",
+      link: "https://example.com"
     },
     {
-      icon: "🎵",
-      title: "Música",
-      text: "Música e bem-estar."
-    },
-    {
-      icon: "📱",
-      title: "Vida digital",
-      text: "Hábitos digitais saudáveis e gestão do tempo de ecrã."
-    },
-    {
-      icon: "🤝",
-      title: "Inclusão",
-      text: "Participação social e comunitária."
-    },
-    {
-      icon: "🎯",
-      title: "Motivação",
-      text: "Definição de objetivos e pensamento positivo."
+      nome: "5.ª Mobilidade",
+      localizacao: "📍 Funchal, Portugal",
+      data: "📅 15 a 20 de março de 2027",
+      resumo:
+        "Encontro de disseminação e apresentação dos resultados do projeto Proeza.",
+      link: "https://example.com"
     }
   ]
 };
