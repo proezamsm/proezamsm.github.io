@@ -16,9 +16,13 @@ document.getElementById("page-content").innerHTML = `
           .map(
             (x) => `
           <article>
-            <span>${x.icon}</span>
-            <h3>${x.title}</h3>
-            <p>${x.text}</p>
+            <h3>${x.nome}</h3>
+            <p class="meta-location"><strong>${x.localizacao}</strong></p>
+            <p class="meta-date">${x.data}</p>
+            <p class="resumo-text">${x.resumo}</p>
+            <a href="${x.link}" target="_blank" rel="noopener noreferrer" class="btn-detalhes">
+              Ver detalhes &rarr;
+            </a>
           </article>
         `
           )
