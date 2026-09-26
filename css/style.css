@@ -433,87 +433,98 @@ body[data-page="disseminacao"] .dissemination-btn{
 
 
 /* =========================================================
-   CARTÕES DE MOBILIDADES (NOVO ESTILO EXCLUSIVO)
+   CARTÕES DE MOBILIDADES — DESIGN PREMIUM & MODERNO
    ========================================================= */
 
 .card-mobility {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
-  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2ebd0;
+  border-radius: 20px;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 4px 15px rgba(0, 60, 100, 0.05);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 10px 25px -5px rgba(7, 52, 93, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .card-mobility:hover {
-  transform: translateY(-4px);
-  border-color: #9fd4e8;
-  box-shadow: 0 12px 28px rgba(0, 60, 100, 0.1);
+  transform: translateY(-6px);
+  border-color: #1696d2;
+  box-shadow: 0 20px 35px -10px rgba(11, 71, 126, 0.12);
 }
 
-.card-mobility .card-title {
-  font-size: 1.25rem;
+.mobility-tag {
+  display: inline-block;
+  font-size: 1.15rem;
   font-weight: 800;
   color: var(--blue);
-  margin-bottom: 12px;
-  line-height: 1.25;
-}
-
-.card-mobility .card-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-bottom: 16px;
-  font-size: 0.9rem;
-  color: var(--muted);
+  margin-bottom: 14px;
+  letter-spacing: -0.2px;
 }
 
 .card-mobility .meta-item {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
-.card-mobility .card-text {
-  font-size: 0.92rem;
-  line-height: 1.5;
-  color: var(--text);
-  margin-bottom: 20px;
+.card-mobility .meta-item.location {
+  color: var(--blue2);
+}
+
+.card-mobility .meta-item.date {
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.card-mobility .meta-icon {
+  font-size: 1rem;
+}
+
+.card-mobility-text {
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: #435b71;
+  margin-bottom: 24px;
   flex-grow: 1;
 }
 
-.card-mobility .card-action {
+.card-mobility-footer {
   margin-top: auto;
+  padding-top: 12px;
 }
 
-.card-mobility .btn-primary {
+.btn-mobility-action {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background-color: #0876bd;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 700;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--blue);
+  color: #ffffff !important;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 0.92rem;
+  font-weight: 800;
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(8, 118, 189, 0.2);
-  transition: background-color 0.2s ease, transform 0.2s ease;
-  width: fit-content;
+  box-shadow: 0 4px 14px rgba(11, 71, 126, 0.22);
+  transition: all 0.25s ease;
+  width: 100%;
 }
 
-.card-mobility .btn-primary:hover {
-  background-color: #065e97;
-  transform: translateY(-1px);
+.btn-mobility-action:hover {
+  background-color: var(--blue2);
+  box-shadow: 0 6px 18px rgba(22, 150, 210, 0.35);
 }
 
-.card-mobility .btn-primary .arrow {
-  transition: transform 0.2s ease;
+.btn-mobility-action .arrow-icon {
+  transition: transform 0.25s ease;
 }
 
-.card-mobility .btn-primary:hover .arrow {
+.btn-mobility-action:hover .arrow-icon {
   transform: translateX(4px);
 }
