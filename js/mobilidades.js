@@ -15,14 +15,25 @@ document.getElementById("page-content").innerHTML = `
         ${d.items
           .map(
             (x) => `
-          <article>
-            <h3>${x.nome}</h3>
-            <p class="meta-location"><strong>${x.localizacao}</strong></p>
-            <p class="meta-date">${x.data}</p>
-            <p class="resumo-text">${x.resumo}</p>
-            <a href="${x.link}" target="_blank" rel="noopener noreferrer" class="btn-detalhes">
-              Ver detalhes &rarr;
-            </a>
+          <article class="card-mobility">
+            <h3 class="card-title">${x.nome}</h3>
+            
+            <div class="card-meta">
+              <span class="meta-item">
+                <span class="meta-icon">📍</span> ${x.localizacao}
+              </span>
+              <span class="meta-item">
+                <span class="meta-icon">📅</span> ${x.data}
+              </span>
+            </div>
+
+            <p class="card-text">${x.resumo}</p>
+
+            <div class="card-action">
+              <a href="${x.link}" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                Ver detalhes <span class="arrow">&rarr;</span>
+              </a>
+            </div>
           </article>
         `
           )
