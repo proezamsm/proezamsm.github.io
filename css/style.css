@@ -271,3 +271,24 @@ body.page-leave{opacity:0;transform:translateY(8px)}
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================================
+   ESTILOS ESPECÍFICOS DA PÁGINA DE DISSEMINAÇÃO (CARTAZ E PARCEIROS)
+   ========================================================= */
+.cartaz-center-wrapper img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,60,100,0.12);
+  transition: transform 0.25s ease;
+}
+
+.cartaz-center-wrapper img:hover {
+  transform: scale(1.015);
+}
+
+.partners-invisible-table tr:last-child {
+  border-bottom: none !important;
+}
