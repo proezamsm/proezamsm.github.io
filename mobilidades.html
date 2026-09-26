@@ -1,35 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Proeza Melhora a Saúde Mental — Mobilidades.">
-<title>Mobilidades | Proeza</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROEZA - Mobilidades</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js" defer></script>
 </head>
-<body data-page="mobilidades">
-<header class="site-header"><div class="container nav-wrap">
-<a class="brand" href="index.html" aria-label="Proeza Melhora a Saúde Mental — início">
-<img class="brand-logo" src="css/imagens/logo.png" alt="Associação Cultural Proeza Altruísta">
-<span class="brand-text"><strong>Proeza <span>Melhora a Saúde Mental</span></strong><small>Mais bem-estar, mais vida</small></span>
-</a>
-<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
-<nav class="main-nav" aria-label="Navegação principal" id="main-nav"></nav>
-</div></header>
-<main id="page-content"></main>
-<footer class="site-footer"><div class="container footer-eu">
-<img src="css/imagens/ue.png" alt="União Europeia">
-<div class="footer-eu-text">
-<strong>Erasmus+ · Educação de Adultos</strong>
-<p>Funded by the European Union. The views and opinions expressed are those of the authors only and do not necessarily reflect the views of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.</p>
-</div>
-</div></footer>
-<script src="dados/menu.js"></script>
-<script src="js/common.js"></script>
-<script src="dados/mobilidades.js"></script>
-<script src="js/mobilidades.js"></script>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main class="container my-5">
+        <h1 class="text-center section-title mb-4">Mobilidades ERASMUS+</h1>
+
+        <!-- Navegação por Separadores (Tabs) -->
+        <ul class="nav nav-pills nav-justified mb-4" id="mobilidadesTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="mob1-tab" data-bs-toggle="tab" data-bs-target="#mob1" type="button" role="tab" aria-controls="mob1" aria-selected="true">
+                    <i class="fa-solid fa-plane-departure me-1"></i> 1ª Mobilidade
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="mob2-tab" data-bs-toggle="tab" data-bs-target="#mob2" type="button" role="tab" aria-controls="mob2" aria-selected="false">
+                    2ª Mobilidade
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="mob3-tab" data-bs-toggle="tab" data-bs-target="#mob3" type="button" role="tab" aria-controls="mob3" aria-selected="false">
+                    3ª Mobilidade
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="mob4-tab" data-bs-toggle="tab" data-bs-target="#mob4" type="button" role="tab" aria-controls="mob4" aria-selected="false">
+                    4ª Mobilidade
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="mob5-tab" data-bs-toggle="tab" data-bs-target="#mob5" type="button" role="tab" aria-controls="mob5" aria-selected="false">
+                    5ª Mobilidade
+                </button>
+            </li>
+        </ul>
+
+        <!-- Conteúdo dos Separadores -->
+        <div class="tab-content card p-4 shadow-sm" id="mobilidadesTabsContent">
+            
+            <!-- 1ª MOBILIDADE (Com dados do PDF) -->
+            <div class="tab-pane fade show active" id="mob1" role="tabpanel" aria-labelledby="mob1-tab">
+                <h2 class="text-primary fw-bold mb-3">1ª Mobilidade — Formação Erasmus+</h2>
+                
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <div class="p-3 bg-light rounded border">
+                            <p class="mb-1"><strong><i class="fa-solid fa-location-dot text-danger"></i> Localização:</strong> Florença, Itália</p>
+                            <p class="mb-1"><strong><i class="fa-solid fa-calendar-days text-primary"></i> Período:</strong> 25 a 30 de novembro de 2024</p>
+                            <p class="mb-0"><strong><i class="fa-solid fa-school text-success"></i> Entidade Acolhedora:</strong> Europass Teacher Academy</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 bg-light rounded border">
+                            <p class="mb-1"><strong><i class="fa-solid fa-book-open text-warning"></i> Curso:</strong> <em>"Wellbeing in School: Positive Education, Coaching and Character Strengths"</em></p>
+                            <p class="mb-0"><strong><i class="fa-solid fa-users text-info"></i> Participantes:</strong> Docentes e Técnicos da Equipa do Projeto PROEZA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="fw-bold text-secondary border-bottom pb-2">Objetivos da Formação</h4>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Adquirir ferramentas de Educação Positiva e Coaching para promoção do bem-estar no contexto escolar.</li>
+                    <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Identificar e desenvolver forças de caráter na comunidade educativa.</li>
+                    <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Partilhar boas práticas com educadores e profissionais de vários países europeus.</li>
+                    <li class="list-group-item"><i class="fa-solid fa-check text-success me-2"></i> Definir estratégias para integrar dinâmicas de saúde mental e inteligência emocional na rotina da escola.</li>
+                </ul>
+
+                <h4 class="fw-bold text-secondary border-bottom pb-2">Atividades & Destaques</h4>
+                <p>Durante a semana de mobilidade, os participantes frequentaram sessões práticas, workshops colaborativos e momentos de reflexão sobre resiliência, inteligência emocional e ambientes escolares positivos, visitando também o património cultural de Florença.</p>
+
+                <div class="alert alert-info d-flex align-items-center mt-3" role="alert">
+                    <i class="fa-solid fa-circle-info fa-2x me-3"></i>
+                    <div>
+                        Os conhecimentos e materiais adquiridos nesta mobilidade serviram de base para as oficinas e dinâmicas aplicadas posteriormente no projeto local PROEZA.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2ª MOBILIDADE (Placeholder) -->
+            <div class="tab-pane fade" id="mob2" role="tabpanel" aria-labelledby="mob2-tab">
+                <h2 class="text-primary fw-bold mb-3">2ª Mobilidade</h2>
+                <p class="text-muted">Informação brevemente disponível.</p>
+            </div>
+
+            <!-- 3ª MOBILIDADE (Placeholder) -->
+            <div class="tab-pane fade" id="mob3" role="tabpanel" aria-labelledby="mob3-tab">
+                <h2 class="text-primary fw-bold mb-3">3ª Mobilidade</h2>
+                <p class="text-muted">Informação brevemente disponível.</p>
+            </div>
+
+            <!-- 4ª MOBILIDADE (Placeholder) -->
+            <div class="tab-pane fade" id="mob4" role="tabpanel" aria-labelledby="mob4-tab">
+                <h2 class="text-primary fw-bold mb-3">4ª Mobilidade</h2>
+                <p class="text-muted">Informação brevemente disponível.</p>
+            </div>
+
+            <!-- 5ª MOBILIDADE (Placeholder) -->
+            <div class="tab-pane fade" id="mob5" role="tabpanel" aria-labelledby="mob5-tab">
+                <h2 class="text-primary fw-bold mb-3">5ª Mobilidade</h2>
+                <p class="text-muted">Informação brevemente disponível.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
 </body>
 </html>
