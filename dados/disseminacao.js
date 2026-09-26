@@ -30,22 +30,22 @@ window.PAGE_DATA = {
   photos: [
     {
       title: "Atividades do projeto",
-      image: "css/imagens/img1.jpg",
+      image: "css/imagens/img1.jpeg",
       description: "Espaço reservado para fotografias das atividades de disseminação."
     },
     {
       title: "Momentos de partilha",
-      image: "css/imagens/img2.jpg",
+      image: "css/imagens/img2.jpeg",
       description: "Espaço reservado para fotografias e momentos de partilha."
     },
     {
       title: "Eventos e encontros",
-      image: "css/imagens/img3.jpg",
+      image: "css/imagens/img3.jpeg",
       description: "Espaço reservado para fotografias de eventos e encontros."
     },
     {
       title: "Resultados em ação",
-      image: "css/imagens/img4.jpg",
+      image: "css/imagens/img4.jpeg",
       description: "Espaço reservado para fotografias relacionadas com os resultados."
     }
   ],
