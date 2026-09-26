@@ -9,9 +9,56 @@ document.getElementById("page-content").innerHTML = `
     </div>
   </section>
 
+  <!-- 1.º BLOCO: CARTAZ DE SAÚDE MENTAL (CENTRADO) -->
   <section class="section">
     <div class="container">
+      <div class="section-heading centered">
+        <p class="eyebrow">DESTAQUE</p>
+        <h2>${d.cartaz.title}</h2>
+        <p>${d.cartaz.description}</p>
+      </div>
 
+      <div class="cartaz-center-wrapper" style="text-align: center; max-width: 650px; margin: 0 auto;">
+        <button class="dissemination-photo" type="button" onclick="openCartazLightbox()" style="background: none; border: none; cursor: pointer; padding: 0; width: 100%;">
+          <img src="${d.cartaz.image}" alt="${d.cartaz.title}" loading="lazy" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,60,100,0.12); transition: transform 0.25s ease;">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2.º BLOCO: OS PARCEIROS (TABELA INVISÍVEL DE 2 COLUNAS) -->
+  <section class="section-soft">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">PARCERIAS</p>
+        <h2>Os Parceiros</h2>
+        <p>Conheça as entidades parceiras e colaboradoras no âmbito do projeto.</p>
+      </div>
+
+      <div class="partners-table-wrapper" style="max-width: 800px; margin: 0 auto;">
+        <table class="partners-invisible-table" style="width: 100%; border-collapse: collapse;">
+          <tbody>
+            ${d.partners.map(partner => `
+              <tr style="border-bottom: 1px solid #d7e8ef;">
+                <td style="padding: 16px 12px; font-weight: 700; color: var(--blue); font-size: 1.05rem;">
+                  ${partner.nome}
+                </td>
+                <td style="padding: 16px 12px; text-align: right;">
+                  <a class="btn btn-outline dissemination-btn" href="${partner.url}" target="_blank" rel="noopener" style="margin: 0;">
+                    Aceder &rarr;
+                  </a>
+                </td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3.º BLOCO: FOTOGRAFIAS (MOMENTOS DO PROJETO) -->
+  <section class="section">
+    <div class="container">
       <div class="section-heading">
         <p class="eyebrow">FOTOGRAFIAS</p>
         <h2>Momentos do projeto</h2>
@@ -31,40 +78,12 @@ document.getElementById("page-content").innerHTML = `
           </article>
         `).join("")}
       </div>
-
     </div>
   </section>
 
+  <!-- 4.º BLOCO: DOCUMENTOS DO PROJETO -->
   <section class="section-soft">
     <div class="container">
-
-      <div class="section-heading">
-        <p class="eyebrow">LINKS</p>
-        <h2>Recursos online</h2>
-        <p>Aceda a páginas, plataformas e outros recursos relacionados com o projeto.</p>
-      </div>
-
-      <div class="dissemination-resource-grid">
-        ${d.links.map(link => `
-          <article class="dissemination-resource-card">
-            <div class="resource-icon">🔗</div>
-            <div>
-              <h3>${link.title}</h3>
-              <p>${link.description}</p>
-              <a class="btn btn-outline dissemination-btn" href="${link.url}" target="_blank" rel="noopener">
-                Aceder
-              </a>
-            </div>
-          </article>
-        `).join("")}
-      </div>
-
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-
       <div class="section-heading">
         <p class="eyebrow">DOCUMENTOS</p>
         <h2>Documentos PDF</h2>
@@ -85,10 +104,10 @@ document.getElementById("page-content").innerHTML = `
           </article>
         `).join("")}
       </div>
-
     </div>
   </section>
 
+  <!-- LIGHTBOX PARA FOTOS E CARTAZ -->
   <div id="dissemination-lightbox" class="gallery-lightbox" aria-hidden="true">
     <button class="gallery-close" type="button" onclick="closeDisseminationPhoto()" aria-label="Fechar">×</button>
     <img id="dissemination-large-image" src="" alt="">
@@ -96,6 +115,16 @@ document.getElementById("page-content").innerHTML = `
 `;
 
 let disseminationPhotoIndex = 0;
+
+function openCartazLightbox() {
+  const lightbox = document.getElementById("dissemination-lightbox");
+  const image = document.getElementById("dissemination-large-image");
+
+  image.src = d.cartaz.image;
+  image.alt = d.cartaz.title;
+  lightbox.classList.add("active");
+  lightbox.setAttribute("aria-hidden", "false");
+}
 
 function openDisseminationPhoto(index) {
   disseminationPhotoIndex = index;
