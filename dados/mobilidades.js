@@ -14,11 +14,11 @@ window.PAGE_DATA = {
     },
     {
       nome: "2.ª Mobilidade",
-      localizacao: "Roma, Itália",
-      data: "10 a 15 de maio de 2026",
+      localizacao: "Dalaman, Muğla Turquia",
+      data: "26-11 – 3-12 de 2025 ",
       resumo:
-        "Programa focado no desenvolvimento de competências sociais, emocionais e de inclusão em grupos de adultos.",
-      link: "#"
+        "Equilíbrio Digital e Bem Estar Mental na Era Pós Pandemia ",
+      link: "docs/mobilidade_2.pdf"
     },
     {
       nome: "3.ª Mobilidade",
@@ -26,7 +26,7 @@ window.PAGE_DATA = {
       data: "12 a 17 de outubro de 2026",
       resumo:
         "Workshop prático focado em arte, expressão emocional e estratégias de promoção de saúde mental.",
-      link: "#"
+      link: "docs/mobilidade_3.pdf"
     },
     {
       nome: "4.ª Mobilidade",
@@ -34,7 +34,7 @@ window.PAGE_DATA = {
       data: "18 a 22 de janeiro de 2027",
       resumo:
         "Atividades pedagógicas focadas na gestão do tempo de ecrã e hábitos digitais saudáveis.",
-      link: "#"
+      link: "docs/mobilidade_4.pdf"
     },
     {
       nome: "5.ª Mobilidade",
@@ -42,7 +42,7 @@ window.PAGE_DATA = {
       data: "15 a 20 de março de 2027",
       resumo:
         "Encontro de disseminação e apresentação dos resultados do projeto Proeza.",
-      link: "#"
+      link: "docs/mobilidade_5.pdf"
     }
   ]
 };
