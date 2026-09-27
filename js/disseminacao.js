@@ -82,7 +82,7 @@ document.getElementById("page-content").innerHTML = `
     <div class="container">
       <div class="section-heading">
         <p class="eyebrow">DOCUMENTOS</p>
-        <h2>Documentos PDF</h2>
+        <h2>Documentos</h2>
         <p>Consulte os documentos e materiais produzidos no âmbito do projeto.</p>
       </div>
 
