@@ -26,7 +26,7 @@ window.PAGE_DATA = {
     }
   ],
 
-  // 3.º Bloco: Fotografias
+  // 3.º Bloco: Fotografias (Apenas imagem e título)
   photos: [
     {
       title: "Atividades do projeto",
@@ -38,38 +38,31 @@ window.PAGE_DATA = {
     },
     {
       title: "Eventos e encontros",
-      image: "css/imagens/img3.jpeg",
-      description: "Espaço reservado para fotografias de eventos e encontros."
+      image: "css/imagens/img3.jpeg"
     },
     {
       title: "Resultados em ação",
-      image: "css/imagens/img4.jpeg",
-      description: "Espaço reservado para fotografias relacionadas com os resultados."
+      image: "css/imagens/img4.jpeg"
     },
     {
       title: "Resultados em ação",
-      image: "css/imagens/img5.jpeg",
-      description: "Espaço reservado para fotografias relacionadas com os resultados."
+      image: "css/imagens/img5.jpeg"
     },
     {
       title: "Resultados em ação",
-      image: "css/imagens/img6.jpeg",
-      description: "Espaço reservado para fotografias relacionadas com os resultados."
+      image: "css/imagens/img6.jpeg"
     },
     {
       title: "Resultados em ação",
-      image: "css/imagens/img7.jpeg",
-      description: "Espaço reservado para fotografias relacionadas com os resultados."
+      image: "css/imagens/img7.jpeg"
     },
     {
       title: "Resultados em ação",
-      image: "css/imagens/img8.jpeg",
-      description: "Espaço reservado para fotografias relacionadas com os resultados."
+      image: "css/imagens/img8.jpeg"
     },
     {
       title: "Resultados em ação",
-      image: "css/imagens/img9.jpeg",
-      description: "Espaço reservado para fotografias relacionadas com os resultados."
+      image: "css/imagens/img9.jpeg"
     }
   ],
 
