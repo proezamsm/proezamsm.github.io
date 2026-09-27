@@ -73,7 +73,6 @@ document.getElementById("page-content").innerHTML = `
             </button>
             <div class="dissemination-photo-caption">
               <h3>${photo.title}</h3>
-              <p>${photo.description}</p>
             </div>
           </article>
         `).join("")}
