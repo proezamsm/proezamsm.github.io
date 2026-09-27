@@ -56,7 +56,7 @@ document.getElementById("page-content").innerHTML = `
     </div>
   </section>
 
-  <!-- 3.º BLOCO: FOTOGRAFIAS (MOMENTOS DO PROJETO) -->
+  <!-- 3.º BLOCO: FOTOGRAFIAS (APENAS IMAGENS) -->
   <section class="section">
     <div class="container">
       <div class="section-heading">
@@ -68,12 +68,9 @@ document.getElementById("page-content").innerHTML = `
       <div class="dissemination-photo-grid">
         ${d.photos.map((photo, index) => `
           <article class="dissemination-photo-card">
-            <button class="dissemination-photo" type="button" onclick="openDisseminationPhoto(${index})">
-              <img src="${photo.image}" alt="${photo.title}" loading="lazy">
+            <button class="dissemination-photo" type="button" onclick="openDisseminationPhoto(${index})" style="background: none; border: none; cursor: pointer; padding: 0; width: 100%;">
+              <img src="${photo.image}" alt="${photo.title || 'Foto do projeto'}" loading="lazy">
             </button>
-            <div class="dissemination-photo-caption">
-              <h3>${photo.title}</h3>
-            </div>
           </article>
         `).join("")}
       </div>
@@ -132,7 +129,7 @@ function openDisseminationPhoto(index) {
   const image = document.getElementById("dissemination-large-image");
 
   image.src = photo.image;
-  image.alt = photo.title;
+  image.alt = photo.title || "";
   lightbox.classList.add("active");
   lightbox.setAttribute("aria-hidden", "false");
 }
