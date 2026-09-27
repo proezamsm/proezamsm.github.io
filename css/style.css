@@ -279,10 +279,11 @@ body.page-leave{opacity:0;transform:translateY(8px)}
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  max-height: 520px; /* Reduzido e limitado para não cortar a imagem */
   height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,60,100,0.12);
-  object-fit: contain !important;
+  object-fit: contain !important; /* Garante que toda a imagem fica visível */
   background-color: #f8fcff;
   transition: transform 0.25s ease;
 }
@@ -296,7 +297,7 @@ body.page-leave{opacity:0;transform:translateY(8px)}
 }
 
 /* =========================================================
-   GRELHA DE FOTOGRAFIAS DE DISSEMINAÇÃO (4 POR LINHA)
+   GRELHA DE FOTOGRAFIAS DE DISSEMINAÇÃO (4 POR LINHA) - SEM DESCRIÇÕES
    ========================================================= */
 .dissemination-photo-grid {
   display: grid;
@@ -326,6 +327,7 @@ body.page-leave{opacity:0;transform:translateY(8px)}
   aspect-ratio: 16 / 10;
   overflow: hidden;
   display: block;
+  background-color: #f1f5f9;
 }
 
 .dissemination-photo img {
@@ -343,7 +345,7 @@ body.page-leave{opacity:0;transform:translateY(8px)}
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  justify-content: center;
   flex-grow: 1;
 }
 
@@ -352,13 +354,7 @@ body.page-leave{opacity:0;transform:translateY(8px)}
   font-weight: 800 !important;
   color: var(--blue) !important;
   margin: 0 !important;
-}
-
-.dissemination-photo-caption p {
-  font-size: 0.8rem !important;
-  color: var(--muted) !important;
-  margin: 0 !important;
-  line-height: 1.35 !important;
+  text-align: center;
 }
 
 @media(max-width: 1024px) {
