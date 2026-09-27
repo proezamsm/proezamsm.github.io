@@ -69,9 +69,9 @@ window.PAGE_DATA = {
   // 4.º Bloco: Documentos PDF
   documents: [
     {
-      title: "Relatório da >disseminação",
+      title: "Relatório da disseminação",
       description: "Espaço reservado para um documento PDF.",
-      url: "docs/Relatorio_Disseminacao"
+      url: "docs/Relatorio_Disseminacao.pdf"
     }
   ]
 };
